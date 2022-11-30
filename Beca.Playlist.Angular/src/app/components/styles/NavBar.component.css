@@ -1,0 +1,29 @@
+nav {
+    height: 100%;
+    background-color:white;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+  nav > a {
+
+    text-decoration: none;
+    color: #1DB954;
+    background-color: white;
+    flex-grow: 1;
+    text-align: center;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0.2%;
+  }
+
+    nav > a:hover {
+      color: white;
+      background-color: #1DB954;
+    }

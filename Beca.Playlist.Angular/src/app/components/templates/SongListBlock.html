@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<div id="wrapper" class="shadow-sm  rounded">
+
+  <h2>Songs</h2>
+  <table class="row-playlist">
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+
+    <tr *ngFor="let song of songs">
+      <td>{{song.id}}</td>
+      <td>{{song.title}}</td>
+      <td>{{song.description}} </td>  
+    </tr>
+  </table>
+
+</div>
