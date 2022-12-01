@@ -9,11 +9,12 @@ import NavBar from './components/NavBar.component';
 import LandingPageView from './components/views/LandingPageView';
 import PlaylistListView from './components/views/PlaylistListView';
 import PlaylistListBlock from './components/PlaylistListBlock.component';
+import DetailedView from './components/views/DetailedView';
 
 @NgModule({
   declarations: [
-    AppComponent, UpperBox, NavBar, PlaylistListBlock,
-    LandingPageView, PlaylistListView
+    AppComponent, UpperBox, NavBar, PlaylistListBlock,                                          //Components
+    LandingPageView, PlaylistListView, DetailedView                                             //Views
   ],
   imports: [
     BrowserModule, HttpClientModule, AppRoutingModule, RouterModule,
