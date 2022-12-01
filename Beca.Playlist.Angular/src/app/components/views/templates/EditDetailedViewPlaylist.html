@@ -7,21 +7,9 @@
   <upperBox [section]="'Playlist details'"></upperBox>
   <div id="wrapper" class="shadow-sm  rounded">
     <h2>Details</h2>
-    <table>
-      <tr>
-        <th>Id</th>
-        <td>{{playlist.id}}</td>
-      </tr>
-      <tr>
-        <th>Title</th>
-        <td>{{playlist.title}}</td>
-      </tr>
-      <tr>
-        <th>Description</th>
-        <td>{{playlist.description}}</td>
-      </tr>
-    </table>
 
+  
+    <editForm [currentPlaylist] ="playlist"></editForm>
 
 
     <h3>Songs</h3>
@@ -36,10 +24,9 @@
         <td>{{song.id}}</td>
         <td>{{song.title}}</td>
         <td>{{song.description}} </td>
-
+        <td><a (click)="deleteSong(song.id.toString())">Remove</a></td>
       </tr>
     </table>
-    <a id="link" [routerLink]="['/playlists/editDetailViewPlaylist',playlist.id]">Edit playlist</a>
   </div>
 
   <footer>

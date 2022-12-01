@@ -4,17 +4,16 @@
 
 <div id="wrapper" class="shadow-sm  rounded">
     <table class="row-playlist">
+        <h2>Playlists</h2>
         <tr>
             <th>Id</th>
             <th>Title</th>
-            <th>Number of songs</th>
             <th>   </th>
         </tr>
 
         <tr *ngFor="let playlist of playlists">
             <td>{{playlist.id}}</td>
             <td>{{playlist.title}}</td>
-            <td *ngIf="playlists?.length">  {{ playlists.length || '0' }} </td>
             <td> <a [routerLink]="['detailedView',playlist.id]"> Details</a></td>
         </tr>
     </table>

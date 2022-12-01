@@ -1,0 +1,20 @@
+
+<div id="container">
+  <form [formGroup] ="myForm" (ngSubmit) ="OnSubmit()">
+    <label>
+      Id:
+    </label>
+    <input type="text" placeholder={{currentPlaylist.id}} value={{currentPlaylist.id}} formControlName="id" class="form-control" readonly />
+    <label>
+      Title:
+    </label>
+    <input type="text" placeholder={{currentPlaylist.title}} value={{currentPlaylist.title}} formControlName ="title" class="form-control" />
+    <label>
+      Description:
+    </label>
+    <input type="text" placeholder={{currentPlaylist.description}} value={{currentPlaylist.description}} formControlName="description" class="form-control" />
+
+    <input class ="btn btn-success" type="submit" value="Submit" />
+  </form>
+
+</div>

@@ -15,3 +15,61 @@ body {
 footer {
   height: 50px;
 }
+
+
+
+#wrapper {
+  background-color: white;
+  color: #1DB954;
+  margin: auto;
+  overflow-y: scroll;
+  max-height: 40%;
+  padding: 2%;
+  min-height: 500px;
+  margin-bottom: 15%;
+  width: 50%;
+  text-align: center;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  
+}
+
+  table > tr {
+    height: 70px;
+   
+  }
+
+  #songTable >tr {
+       border-top: solid;
+    border-bottom: solid;
+    border-color: #1DB954;
+  }
+
+  #songTable{
+      margin-bottom: 5%;
+  }
+
+a {
+  text-decoration: none;
+  color: #1DB954;
+  height: 100%;
+  width: 100%;
+  border: solid;
+  border-radius: 25px;
+  border-color: #1DB954;
+  padding: 10px;
+  
+}
+
+  a:hover {
+    background-color: #1DB954;
+    color: white;
+  }
+
+  #link{
+      margin:auto;
+  }

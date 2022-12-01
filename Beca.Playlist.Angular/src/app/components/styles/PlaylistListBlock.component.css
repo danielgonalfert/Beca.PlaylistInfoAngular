@@ -18,10 +18,12 @@ table {
  
 }
 
- table > tr {
-   height: 70px;
-    
- }
+  table > tr {
+    height: 70px;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #1DB954;
+  }
 
 a {
   text-decoration: none;

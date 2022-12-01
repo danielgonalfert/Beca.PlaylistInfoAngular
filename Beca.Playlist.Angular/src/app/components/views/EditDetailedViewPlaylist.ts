@@ -7,16 +7,18 @@ import Song from '../../models/Song.model';
 
 
 @Component({
-  selector: 'detailedView',
-  templateUrl: './templates/DetailedView.html',
+  selector: 'EditDetailedPlaylist',
+  templateUrl: './templates/EditDetailedViewPlaylist.html',
   styleUrls: ['./styles/DetailedView.css']
 })
 
-export default class DetailedView  {
+export default class DetailedView {
 
- 
+
   id!: string;
   private url = 'https://localhost:7035/api/playlists/id/';
+
+  @Input()
   playlist!: Playlist;
   songs: Song[] = [];
 
@@ -45,7 +47,7 @@ export default class DetailedView  {
 
 
   ngOnDestroy(): void {
-  
+
     if (this.paramSub) {
       this.paramSub.unsubscribe();
     }
@@ -54,5 +56,10 @@ export default class DetailedView  {
       this.sub.unsubscribe();
     }
 
+  }
+
+  deleteSong(id: string): void {
+    this.http.delete<any>('https://localhost:7035/api/songs/delete/' + id).subscribe(data => { console.log(data)})
+    window.location.reload();
   }
 }
