@@ -10,10 +10,11 @@ import LandingPageView from './components/views/LandingPageView';
 import PlaylistListView from './components/views/PlaylistListView';
 import PlaylistListBlock from './components/PlaylistListBlock.component';
 import DetailedView from './components/views/DetailedView';
+import SongListBlock from './components/SongListBlock.component';
 
 @NgModule({
   declarations: [
-    AppComponent, UpperBox, NavBar, PlaylistListBlock,                                          //Components
+    AppComponent, UpperBox, NavBar, PlaylistListBlock, SongListBlock,                                  //Components
     LandingPageView, PlaylistListView, DetailedView                                             //Views
   ],
   imports: [

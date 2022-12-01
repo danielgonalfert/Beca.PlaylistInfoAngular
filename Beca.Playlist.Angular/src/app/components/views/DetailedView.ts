@@ -5,8 +5,9 @@ import { catchError, Observable, Subscription, tap } from "rxjs";
 import Playlist from '../../models/Playlist.model';
 import UpperBox from '../../components/UpperBox.component';
 
+
 @Component({
-  selector: 'playlistListBlock',
+  selector: 'detailedView',
   templateUrl: './templates/DetailedView.html',
   styleUrls: ['./styles/DetailedView.css']
 })

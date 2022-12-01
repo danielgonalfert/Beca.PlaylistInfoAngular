@@ -11,7 +11,7 @@ import Song from '../models/Playlist.model';
   styleUrls: ['./styles/SongListBlock.component.css']
 })
 
-export default class PlaylistListBlock  {
+export default class SongListBlock  {
 
   @Input()
   id!: number;
